@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# 项目开发
+｀｀｀
+1.安装node、npm、webstorm
+2.安装angular-cli
+npm install -g @angular/cli
+ng -v查看是否安装成功
+3.创建项目
+ng new 项目名称
+4.安装组件
+ng g component 组件名称
+｀｀｀

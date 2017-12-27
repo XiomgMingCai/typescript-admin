@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageHeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
