@@ -5,21 +5,25 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
-import { PageHeaderComponent } from './page-header/page-header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { MenuComponent } from './menu/menu.component';
+import { HeaderComponent } from './header/header.component';
+import { StockManageComponent } from './stock/stock-manage/stock-manage.component';
+import { StarsComponent } from './stars/stars.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageHeaderComponent,
     SidebarComponent,
     FooterComponent,
     ContentComponent,
-    MenuComponent
+    MenuComponent,
+    HeaderComponent,
+    StockManageComponent,
+    StarsComponent
   ],
   imports: [
     BrowserModule,
