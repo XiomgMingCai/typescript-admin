@@ -11,12 +11,14 @@ import {HeaderComponent} from './header/header.component';
 import {StockManageComponent} from './stock/stock-manage/stock-manage.component';
 import {StarsComponent} from './stars/stars.component';
 import {RouterModule, Routes} from "@angular/router";
-import { GashboardComponent } from './gashboard/gashboard.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {StockFormComponent} from './stock/stock-form/stock-form.component';
 
 const routeConfig: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-  {path: 'dashboard',  component: GashboardComponent},
-  {path: 'stock',  component: StockManageComponent},
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'stock', component: StockManageComponent, data: [{isPro: true}, {name: '股票管理'}]},
+  {path: 'stock/:id', component: StockFormComponent, data: [{isPro: true}, {name: '股票管理'}]},
 ];
 
 @NgModule({
@@ -29,7 +31,8 @@ const routeConfig: Routes = [
     HeaderComponent,
     StockManageComponent,
     StarsComponent,
-    GashboardComponent
+    DashboardComponent,
+    StockFormComponent
   ],
   imports: [
     BrowserModule,
