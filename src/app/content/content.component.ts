@@ -32,7 +32,8 @@ export class ContentComponent implements OnInit {
 
   ngOnInit() {
   }
-  setPageTitle(title:string){
+
+  setPageTitle(title: string) {
     document.getElementsByTagName('title')[0].innerText = title
   }
 }
